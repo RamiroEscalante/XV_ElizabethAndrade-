@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mis XV años</title>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@300;400;500;600&family=Inter:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- AOS CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Elementos decorativos de fondo -->
+    <div class="background-decoration">
+      <div class="floating-element element-1"></div>
+      <div class="floating-element element-2"></div>
+      <div class="floating-element element-3"></div>
+      <div class="floating-element element-4"></div>
+      <div class="floating-element element-5"></div>
+    </div>
+
+    <div class="main-container">
+      <!-- Tarjeta principal de invitación -->
+      <div class="invitation-card" data-aos="zoom-in" data-aos-duration="1200">
+        <!-- Elementos decorativos de esquinas -->
+        <div class="corner-decoration top-left"></div>
+        <div class="corner-decoration top-right"></div>
+        <div class="corner-decoration bottom-left"></div>
+        <div class="corner-decoration bottom-right"></div>
+
+        <!-- Contenedor de la foto -->
+        <div class="photo-container">
+          <div class="photo-frame">
+            <img
+              src="/imagenes/camisa_rosa.jpeg"
+              alt="Camila"
+              class="quince-img"
+            />
+            <div class="photo-overlay"></div>
+          </div>
+          <div class="heart-decoration">♥</div>
+        </div>
+
+        <!-- Títulos principales -->
+        <div class="title-section">
+          <h2 class="subtitle">Mis XV años</h2>
+          <div class="divider-line"></div>
+          <h1 class="main-title">
+            Elizabeth Judith
+            <br />
+            <span class="last-name">Andrade Velázquez </span>
+          </h1>
+          <div class="divider-ornament">
+            <span>❋</span>
+            <div class="ornament-line"></div>
+            <span>❋</span>
+          </div>
+          <p class="invitation-text">
+            ¡Gracias por acompañarme en este día tan especial!
+          </p>
+          <br />
+          <p class="subtitle" id="timer"></p>
+        </div>
+
+        <!-- Reproductor de música -->
+        <div class="music-player">
+          <button class="play-button" onclick="toggleAudio()">
+            <span class="play-icon">▶</span>
+            <span class="pause-icon">⏸</span>
+          </button>
+          <div class="music-waves">
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+          </div>
+          <audio id="audio-player" loop>
+            <source src="musica/music.mp3" type="audio/mp3" />
+            Tu navegador no soporta el elemento de audio.
+          </audio>
+        </div>
+      </div>
+
+      <!-- Detalles de la invitación -->
+      <div
+        class="invitation-details"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-delay="200"
+      >
+        <div class="section-header">
+          <div class="header-ornament">
+            <div class="ornament-dot"></div>
+            <div class="ornament-line-header"></div>
+            <span class="heart-symbol">♥</span>
+            <div class="ornament-line-header"></div>
+            <div class="ornament-dot"></div>
+          </div>
+        </div>
+
+        <article class="invitation-message">
+          <p>
+            Con la bendición de Dios y el amor mi familia, te invito a celebrar
+            conmigo mis XV años. Será un honor compartir este día tan especial
+            contigo.
+          </p>
+          <!-- <p>
+            He soñado con este momento, y sería un honor contar con tu presencia
+            para compartir mi alegría y dar gracias por estos quince años de
+            vida.
+          </p> -->
+        </article>
+
+        <div class="date-highlight">
+          <div class="date-container">
+            <span class="date-icon">📅</span>
+            <span class="date-text">14 de Noviembre del 2026</span>
+          </div>
+        </div>
+
+        <p class="gratitude-message">
+          Con mucho cariño, les agradezco por estar a mi lado en este día tan
+          especial. Su apoyo y amor significan muchísimo para mí. ¡Gracias por
+          ser parte de mis XV!
+        </p>
+
+        <div class="family-section">
+          <div class="family-group">
+            <h5 class="family-title">Mis papás</h5>
+            <div class="family-names">
+              <p>Rosalina Velázquez López </p>
+              <p>José Saúl Andrade Cázares </p>
+            </div>
+          </div>
+          <div class="family-group">
+            <h5 class="family-title">Mis padrinos</h5>
+            <div class="family-names">
+              <p>Gissel Guillén Moreno</p>
+              <p>Alonso Uriel García García</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Información de ubicación -->
+      <div
+        class="location-content"
+        data-aos="fade-right"
+        data-aos-duration="1000"
+        data-aos-delay="400"
+      >
+        <div class="section-title">
+          <h4>Horario y Ubicación</h4>
+          <p class="section-subtitle">
+            Encontrarás todos los detalles de la celebración
+          </p>
+        </div>
+
+        <div class="events-container">
+          <div class="event-card">
+            <div class="event-icon">⛪</div>
+            <h5 class="event-title">Misa</h5>
+            <div class="event-time">19:00 Hrs</div>
+            <p class="event-description">
+              Parroquia de San Pedro Apóstol, Zapopan
+            </p>
+            <a
+              href="https://www.google.com/maps/place/Parroquia+de+San+Pedro+Ap%C3%B3stol,+Zapopan/@20.7220117,-103.393264,17z/data=!3m1!4b1!4m6!3m5!1s0x8428afba8af89fa3:0x260695514ed8e65a!8m2!3d20.7220117!4d-103.3906891!16s%2Fg%2F1thsrpzn?entry=ttu&g_ep=EgoyMDI1MDYxNy4wIKXMDSoASAFQAw%3D%3D"
+              target="_blank"
+              class="location-button"
+            >
+              <span class="button-icon">📍</span>
+              Ver ubicación
+            </a>
+          </div>
+
+          <div class="event-card">
+            <div class="event-icon">🎉</div>
+            <h5 class="event-title">Evento</h5>
+            <div class="event-time">21:00 Hrs</div>
+            <p class="event-description">
+              Terraza Jardin Veranda 
+              <a
+                href="https://www.google.com/maps/place/Terraza+Jardin+Veranda+Salon+de+Eventos/@20.6194591,-103.2559343,17z/data=!3m1!4b1!4m6!3m5!1s0x8428b5aede266f77:0x32ecffeaeea81723!8m2!3d20.6194591!4d-103.2559343!16s%2Fg%2F11fs80rhwf?hl=es-MX&entry=ttu&g_ep=EgoyMDI2MDIwNC4wIKXMDSoKLDEwMDc5MjA2OUgBUAM%3D"
+                target="_blank"
+                class="location-button"
+              >
+                <span class="button-icon">📍</span>
+                Ver ubicación
+              </a>
+            </p>
+          </div>
+
+          <div class="event-card">
+            <div class="event-icon">
+              <img src="imagenes/vestimenta.png" width="50px" height="50px" />
+            </div>
+            <h5 class="event-title">Importante:</h5>
+            <p class="event-description">
+              <strong>CÓDIGO DE VESTIMENTA FORMAL</strong>
+              <br />
+              Favor de evitar color dorado y rosa palo.
+            </p>
+          </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Confirmación de asistencia -->
+      <div
+        class="confirmation-content"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-delay="600"
+      >
+        <div class="confirmation-header">
+          <div class="confirmation-icon">💌</div>
+          <h4 class="confirmation-title">Confirma tu asistencia</h4>
+          <p class="confirmation-message">
+           ¡NO FALTEN!
+            <br />
+            Los esperamos para celebrar y vivir una noche inolvidable.
+            🥹💖
+          </p>
+        </div>
+
+        <a
+          href="https://wa.me/5213313479386?text=%C2%A1Hola!%20%F0%9F%98%8A%20Estar%C3%A9%20encantado%20de%20acompa%C3%B1arte%20en%20tus%20XV%20%C2%A1Gracias%20por%20invitarme!%20%F0%9F%8E%89"
+          target="_blank"
+          class="whatsapp-button"
+        >
+          <span class="whatsapp-icon">📲</span>
+          Confirmar por WhatsApp
+          <div class="button-shine"></div>
+        </a>
+      </div>
+
+      <!-- Decoración final -->
+      <div class="footer-decoration">
+        <div class="footer-ornament">
+          <div class="footer-line"></div>
+          <span class="footer-heart">♥</span>
+          <div class="footer-line"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+
+    <script src="funtion.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: true,
+        offset: 100,
+      });
+
+      let isPlaying = false;
+      const audio = document.getElementById("audio-player");
+      const playButton = document.querySelector(".play-button");
+      const waves = document.querySelectorAll(".wave");
+
+      function toggleAudio() {
+        if (isPlaying) {
+          audio.pause();
+          playButton.classList.remove("playing");
+          waves.forEach((wave) => (wave.style.animationPlayState = "paused"));
+        } else {
+          audio.play();
+          playButton.classList.add("playing");
+          waves.forEach((wave) => (wave.style.animationPlayState = "running"));
+        }
+        isPlaying = !isPlaying;
+      }
+
+      // Animación de elementos flotantes
+      document.addEventListener("DOMContentLoaded", function () {
+        const floatingElements = document.querySelectorAll(".floating-element");
+        floatingElements.forEach((element, index) => {
+          element.style.animationDelay = `${index * 0.5}s`;
+        });
+      });
+    </script>
+  </body>
+</html>
